@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id='btn'>点我获取信息</button>
+		<div id="box"></div>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$('#btn').click(function(){
+				$('#box').load('public.html h4,p',function(){
+					$('.name').html('姓名：李四');
+				});
+			})
+		</script>
+	</body>
+</html>
